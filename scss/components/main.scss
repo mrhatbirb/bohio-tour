@@ -1,0 +1,39 @@
+main {
+    margin: 35px 15px 10px 15px;
+
+    .first-container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .first-container__content{
+
+            .first-subtitle {
+                color: rgb(14, 73, 14);
+                padding-bottom: 10px;
+            }
+    
+        }
+
+        .image-container {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    .second-container{
+        margin-top: 30px;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 20px;
+        background-image: url('../../img/till-rottmann-sSv8BwFBqrU-unsplash.jpg');
+        color: #fff;
+        
+        .second-subtitle{
+            margin-bottom: 15px;
+        }
+    }
+}

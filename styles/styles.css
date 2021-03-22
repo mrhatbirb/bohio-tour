@@ -9,13 +9,81 @@ h2 {
   font-size: 20px;
 }
 
-nav {
-  padding: 20px 10px;
+nav.menu {
+  padding: 15px 10px;
   background-color: #3d3d3d;
 }
-nav h2 {
-  margin-left: 8%;
+nav.menu h2 {
+  margin-left: 5%;
   color: #fff;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.header .background-image {
+  width: 100%;
+}
+.header .title {
+  position: absolute;
+}
+.header .title .title-small {
+  font-size: 25px;
+  font-weight: bold;
+}
+.header .title h1 {
+  font-size: 50px;
+}
+.header .fa-chevron-down {
+  position: absolute;
+  bottom: 25px;
+  padding: 3px;
+  color: black;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+main {
+  margin: 35px 15px 10px 15px;
+}
+main .first-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .first-container .first-container__content .first-subtitle {
+  color: #0e490e;
+  padding-bottom: 10px;
+}
+main .first-container .image-container {
+  width: 100%;
+}
+main .first-container .image-container img {
+  width: 100%;
+}
+main .second-container {
+  margin-top: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 20px;
+  background-image: url("../../img/till-rottmann-sSv8BwFBqrU-unsplash.jpg");
+  color: #fff;
+}
+main .second-container .second-subtitle {
+  margin-bottom: 15px;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #3d3d3d;
 }
 
 /*# sourceMappingURL=styles.css.map */
