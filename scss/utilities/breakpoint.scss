@@ -1,10 +1,10 @@
 @mixin responsive($size) {
     $screen_sizes: (
-        phone:   "(max-width: 600px)",
-        tablet:  "(max-width: 800px)",
-        small:   "(max-width: 900px)",
-        medium:  "(max-width: 1250px)",
-        large:   "(max-width: 1600px)",
+        phone:   "(min-width: 600px)",
+        tablet:  "(min-width: 800px)",
+        small:   "(min-width: 900px)",
+        medium:  "(min-width: 1250px)",
+        large:   "(min-width: 1600px)",
     );
 
     $query-size: map-get($screen_sizes, $size);
