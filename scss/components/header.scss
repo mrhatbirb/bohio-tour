@@ -36,11 +36,40 @@
     }
 }
 
+@include responsive('large'){
+    .header{
+
+        .background-image {
+            background-size: contain;
+            height: 800px;
+        }
+    }
+}
+
+@include responsive('medium'){
+    .header{
+
+        .background-image {
+            background-size: contain;
+            height: 700px;
+        }
+    }
+}
+
 @include responsive('small'){
     .header{
 
         .background-image {
-            
+            object-fit: contain;
+        }
+    }
+}
+
+@include responsive('tablet'){
+    .header{
+
+        .background-image{
+            height: 500px;
         }
     }
 }
