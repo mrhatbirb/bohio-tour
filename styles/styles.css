@@ -26,11 +26,12 @@ nav.menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #c2c2c2;
   color: #fafafa; }
   .header .background-image {
     width: 100%;
-    filter: brightness(70%); }
+    object-fit: cover;
+    object-position: bottom;
+    filter: brightness(60%); }
   .header .title {
     position: absolute; }
     .header .title .title-small {
@@ -41,30 +42,37 @@ nav.menu {
   .header .fa-chevron-down {
     position: absolute;
     bottom: 25px;
-    padding: 3px;
+    padding: 15px;
     color: black;
+    font-size: 1.3em;
     background-color: lightgray;
     border-radius: 50%; }
 
 @media (min-width: 1600px) {
   .header .background-image {
+    object-fit: cover;
+    object-position: bottom;
     height: 800px; } }
 
 @media (min-width: 1250px) {
   .header .background-image {
+    object-fit: cover;
+    object-position: bottom;
     height: 700px; } }
 
 @media (min-width: 900px) {
   .header .background-image {
-    object-fit: contain;
-    height: 800px; } }
+    object-fit: cover;
+    object-position: bottom; } }
 
 @media (min-width: 750px) {
   .header .background-image {
+    object-fit: cover;
+    object-position: bottom;
     height: 500px; } }
 
 main {
-  margin: 35px 15px 10px 15px; }
+  margin: 35px 15px 1px 15px; }
   main .first-container {
     display: flex;
     flex-direction: column;
@@ -110,6 +118,7 @@ main {
     background-position: 0; } }
 
 footer {
+  margin-top: 0;
   padding: 20px;
   display: flex;
   justify-content: center;
