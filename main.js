@@ -9,5 +9,4 @@ setInterval(changeImage, 3500)
 function changeImage(){
     imageElement.src = images[times];
     times = (times + 1) % images.length;
-    console.log(times);
 }
