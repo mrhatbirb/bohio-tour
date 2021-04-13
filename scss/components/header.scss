@@ -1,0 +1,81 @@
+@import '../utilities/breakpoint.scss';
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(250, 250, 250);
+
+    .background-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: bottom;
+        filter: brightness(60%);
+    }
+
+    .title {
+        position: absolute;
+
+        .title-small {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    .fa-chevron-down {
+        position: absolute;
+        bottom: 25px;
+        padding: 15px;
+        color: black;
+        font-size: 1.3em;
+        background-color: lightgray;
+        border-radius: 50%;
+    }
+}
+
+@include responsive('large'){
+    .header{
+
+        .background-image {
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+}
+
+@include responsive('medium'){
+    .header{
+
+        .background-image {
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+}
+
+@include responsive('small'){
+    .header{
+
+        .background-image {
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+}
+
+@include responsive('tablet'){
+    .header{
+
+        .background-image{
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+}

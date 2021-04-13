@@ -1,0 +1,77 @@
+@import '../utilities/breakpoint.scss';
+
+main {
+    margin: 35px 15px 1px 15px;
+
+    .first-container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .first-container__content{
+
+            .first-subtitle {
+                color: rgb(14, 73, 14);
+                padding-bottom: 10px;
+            }
+
+            .first-container__content-second-paragraph{
+                margin-top: 20px;
+            }
+    
+        }
+
+        .image-container {
+            width: 100%;
+
+            img {
+                width: 100%;
+                filter: brightness(90%);
+            }
+        }
+    }
+    
+    .second-container{
+        margin-top: 30px;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 20px;
+        background-image: url('../img/nadia-cubedo-n1RxoVEpO6Q-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+        
+        .second-container__content{
+            background-color: rgba(0, 0, 0, 0.456);
+            padding: 20px;
+            border-radius: 5px;
+            .second-subtitle{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@include responsive('small'){
+    main{
+        .first-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+
+            .image-container{
+                width: 600px;
+                
+                img{
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+        .second-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background-position: 0;
+        }
+    }
+}
